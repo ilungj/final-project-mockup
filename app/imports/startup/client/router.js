@@ -2,6 +2,24 @@ import { FlowRouter } from 'meteor/kadira:flow-router';
 import { BlazeLayout } from 'meteor/kadira:blaze-layout';
 import { $ } from 'meteor/jquery';
 
+FlowRouter.route('/page1', {
+  action() {
+    BlazeLayout.render('Landing_Layout', { main: 'Page_1' });
+  },
+});
+
+FlowRouter.route('/page2', {
+  action() {
+    BlazeLayout.render('Landing_Layout', { main: 'Page_2' });
+  },
+});
+
+FlowRouter.route('/page3', {
+  action() {
+    BlazeLayout.render('Landing_Layout', { main: 'Page_3' });
+  },
+});
+
 
 /*                        LANDING ROUTE                       */
 
